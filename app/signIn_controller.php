@@ -7,7 +7,7 @@ session_start();
      $sql_query = "select * from user where username='".$uname."'";
      $result = mysqli_query($conn,$sql_query);
      $resultArray = mysqli_fetch_array($result);
-     
+     if(!$resultArray)  $resultArray = [];
      if(sizeof($resultArray) > 0){
        if(password_verify($password,$resultArray["password"])){
         $id=$resultArray["id"];
@@ -17,8 +17,7 @@ session_start();
          $_SESSION['user_type'] = $type;
          header("Location: home.php");
        }else header("Location: index.php?message=Invalid Password/Username");
-       
-     }
+     }else header("Location: index.php?message=Invalid Password/Username");
 
  }
 ?>
