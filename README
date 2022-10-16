@@ -1,0 +1,28 @@
+----A Blog Project Wth Php-----
+
+->> ATTENTION <<--
+Do not change the location of any file 
+
+
+How to run:
+    -> docker compose up
+    -> in browser : localhost:2345
+    -> for admin pannel : localhost:8080
+        Serveur: db
+        Utilisateur: root
+        Mot de passe: password
+
+
+
+How to use:
+User
+1. Sign up as a user or admin.
+2. Create your own post with header and content as you please.
+3. You can edit or delete as fit of you own
+Admin 
+1. He can do all as user but can modify or delete every post.
+
+
+
+Additonal Info:
+1. There are already 3 article present (Test).

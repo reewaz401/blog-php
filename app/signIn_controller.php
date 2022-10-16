@@ -7,8 +7,10 @@ session_start();
      $sql_query = "select * from user where username='".$uname."'";
      $result = mysqli_query($conn,$sql_query);
      $resultArray = mysqli_fetch_array($result);
+     //check if user name exits
      if(!$resultArray)  $resultArray = [];
      if(sizeof($resultArray) > 0){
+      //check if password exist
        if(password_verify($password,$resultArray["password"])){
         $id=$resultArray["id"];
         $type=$resultArray["type"];

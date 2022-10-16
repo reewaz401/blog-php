@@ -21,7 +21,6 @@ $query = mysqli_query($conn, "SELECT * FROM post WHERE user_id = '$user_id'")
    echo "<table><tr>";
    echo "</tr>";
    echo "<img src = './myArticle1.png' style='width:100%;>";
-
    echo "<div class='row'>";
    echo "<div class='leftcolumn'>";
 while ($row = mysqli_fetch_array($query)){
