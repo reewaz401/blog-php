@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+  .button-3 {
+    appearance: none;
+    background-color: #2ea44f;
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  
+  
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-3:hover {
+    background-color: #2c974b;
+  }
+  
+  .button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-3:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+  
